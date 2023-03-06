@@ -1,4 +1,4 @@
-package json-utils
+package json_utils
 
 const (
 	bom0 = 0xef
