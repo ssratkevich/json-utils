@@ -9,7 +9,7 @@ Fast usage sample:
 import (
     "encoding/json"
     "os"
-    "ssratkevich/json_utils"
+    "github.com/ssratkevich/json_utils"
 )
 
 func getData(name string) (any, error) {
