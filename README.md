@@ -7,21 +7,20 @@ Fast usage sample:
 
 ``` go
 import (
-	"encoding/json"
-	"os"
+    "encoding/json"
+    "os"
     "ssratkevich/json_utils"
 )
 
 func getData(name string) (any, error) {
-	src, err := os.ReadFile(name)
-	if err != nil {
-		return nil, err
-	}
-	src = json_utils.SanitizeJson(src)
-	// parsing and handling JSON
-	var data any
-	err = json.Unmarshal(src, &data)
-	return data, err
+    src, err := os.ReadFile(name)
+    if err != nil {
+        return nil, err
+    }
+    src = json_utils.SanitizeJson(src)
+    // parsing and handling JSON
+    var data any
+    err = json.Unmarshal(src, &data)
+    return data, err
 }
-
 ```
