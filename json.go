@@ -5,7 +5,7 @@ import (
 )
 
 // Delete comments and BOM (if any) from JSON
-func SanitizeJson(b []byte) []byte {
+func FixJson(b []byte) []byte {
 	b = RemoveBom(b)
 	b = stripComments(b)
 	return b

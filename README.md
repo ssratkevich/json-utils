@@ -17,7 +17,7 @@ func getData(name string) (any, error) {
     if err != nil {
         return nil, err
     }
-    src = json_utils.SanitizeJson(src)
+    src = json_utils.FixJson(src)
     // parsing and handling JSON
     var data any
     err = json.Unmarshal(src, &data)
