@@ -1,3 +1,3 @@
 module github.com/ssratkevich/json-utils
 
-go 1.19
+go 1.11
